@@ -1,0 +1,6 @@
+.container {
+    width: 100vw;
+    display: flex;
+
+    background: radial-gradient(50% 50% at 50% 50%, #58595E 0%, #1D1E23 100%);
+}
