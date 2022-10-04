@@ -3,8 +3,8 @@
     display: grid;
     grid-template: 
     "aside header header"
-    "aside main   aside-page"
-    "aside main   aside-page"
+    "aside main   aside-nav"
+    "aside main   aside-nav"
     ;
 
     grid-template-columns: 199px 1fr 199px;
@@ -26,6 +26,18 @@
     align-items: center;
 }
 
-.grid-area-aside-page{
-    grid-area: aside-page;
+.grid-area-main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+
+    filter: drop-shadow(6px 11px 4px rgba(0, 0, 0, 0.25));
+}
+
+.grid-area-aside-nav{
+    grid-area: aside-nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }

@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
+import { AsideNavComponent } from './aside-nav/aside-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    AsideNavComponent
   ],
   imports: [
     BrowserModule,
