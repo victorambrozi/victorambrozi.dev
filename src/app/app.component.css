@@ -1,6 +1,31 @@
 .container {
     width: 100vw;
-    display: flex;
+    display: grid;
+    grid-template: 
+    "aside header header"
+    "aside main   aside-page"
+    "aside main   aside-page"
+    ;
+
+    grid-template-columns: 199px 1fr 199px;
 
     background: radial-gradient(50% 50% at 50% 50%, #58595E 0%, #1D1E23 100%);
+}
+
+.grid-area-aside{
+    grid-area: aside;
+}
+
+.grid-area-header {
+    grid-area: header;
+    height: 120px;
+    padding-right: 64px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.grid-area-aside-page{
+    grid-area: aside-page;
 }
