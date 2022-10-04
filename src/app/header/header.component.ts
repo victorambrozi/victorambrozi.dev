@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   header = {
     items: {
       home: {
-        name: "Header",
+        name: "Home",
         path: "#"
       },
       projects: {
