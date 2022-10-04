@@ -36,8 +36,10 @@
 
 .grid-area-aside-nav{
     grid-area: aside-nav;
+    padding-right: 64px;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
 }

@@ -3,9 +3,7 @@
 }
 
 .aside-nav p {
-    width: 1px;
-    word-wrap: break-word;
-    white-space: pre-wrap;
+    writing-mode: vertical-rl;
 
     font-weight: 500;
     font-size: 12px;
@@ -13,9 +11,22 @@
     color: #DDD;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+    transition: all .3s ease-in-out;
+    animation: show-right .9s;
+}
+
+@keyframes show-right {
+    from {
+        opacity: 0;
+        transform: translate3d(15px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .aside-nav p::before{
