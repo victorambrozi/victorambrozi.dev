@@ -1,10 +1,4 @@
-.title {
-    font-size: 16px;
-
-    color: #DDD;
-    
-}
-
-.title > span {
-    font-size: 128px;
+.home-main {
+   width: 100%;
+    padding: 16px;
 }

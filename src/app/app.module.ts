@@ -8,6 +8,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { AsideNavComponent } from './aside-nav/aside-nav.component';
+import { AboutComponent } from './about/about.component';
+import { HomeTitleComponent } from './home-title/home-title.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AsideNavComponent } from './aside-nav/aside-nav.component';
     SidebarComponent,
     HeaderComponent,
     MainComponent,
-    AsideNavComponent
+    AsideNavComponent,
+    AboutComponent,
+    HomeTitleComponent
   ],
   imports: [
     BrowserModule,
