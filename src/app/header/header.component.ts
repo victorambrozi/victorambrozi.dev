@@ -11,15 +11,23 @@ export class HeaderComponent implements OnInit {
     items: {
       home: {
         name: "Home",
-        path: "#"
+        path: "/"
       },
       projects: {
         name: "Projetos",
-        path: "#"
+        path: "/projects"
       },
       contact: {
         name: "Contato",
-        path: "#"
+        path: "/contact"
+      },
+      about: {
+        name: "Sobre",
+        path: "/about"
+      },
+      service: {
+        name: "Serviços",
+        path: "/services"
       }
     }
   }
