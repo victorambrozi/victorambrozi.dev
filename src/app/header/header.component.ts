@@ -8,28 +8,28 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   header = {
-    items: {
-      home: {
+    items: [
+      {
         name: "Home",
         path: "/"
       },
-      projects: {
-        name: "Projetos",
-        path: "/projects"
-      },
-      contact: {
-        name: "Contato",
-        path: "/contact"
-      },
-      about: {
+      {
         name: "Sobre",
         path: "/about"
       },
-      service: {
+      {
+        name: "Skills",
+        path: "/skills"
+      },
+      {
         name: "Serviços",
         path: "/services"
-      }
-    }
+      },
+      {
+        name: "Contato",
+        path: "/contact"
+      },
+    ]
   }
   constructor() { }
 

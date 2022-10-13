@@ -1,28 +1,8 @@
 <nav>
   <ul class="navigation">
-    <li>
-      <a [href]="header.items.home.path">
-        {{ header.items.home.name | uppercase }}
-      </a>
-    </li>
-    <li>
-      <a [href]="header.items.about.path">
-        {{ header.items.about.name | uppercase }}
-      </a>
-    </li>
-    <li>
-      <a [href]="header.items.projects.path">
-        {{ header.items.projects.name | uppercase }}</a
-      >
-    </li>
-    <li>
-      <a [href]="header.items.service.path">
-        {{ header.items.service.name | uppercase }}
-      </a>
-    </li>
-    <li>
-      <a [href]="header.items.contact.path">
-        {{ header.items.contact.name | uppercase }}
+    <li *ngFor="let item of header.items">
+      <a [href]="item.path">
+        {{ item.name | uppercase }}
       </a>
     </li>
   </ul>
