@@ -11,6 +11,7 @@ import { MainComponent } from './main/main.component';
 import { AsideNavComponent } from './aside-nav/aside-nav.component';
 import { AboutComponent } from './about/about.component';
 import { HomeTitleComponent } from './home-title/home-title.component';
+import { HomeSkillsComponent } from './home-skills/home-skills.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeTitleComponent } from './home-title/home-title.component';
     MainComponent,
     AsideNavComponent,
     AboutComponent,
-    HomeTitleComponent
+    HomeTitleComponent,
+    HomeSkillsComponent
   ],
   imports: [
     BrowserModule,
