@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
     items: [
       {
         name: "Home",
-        path: "/"
+        path: "/home"
       },
       {
         name: "Sobre",

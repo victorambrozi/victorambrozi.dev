@@ -1,9 +1,10 @@
 <nav>
   <ul class="navigation">
     <li *ngFor="let item of header.items">
-      <a [href]="item.path">
+      <a routerLink={{item.path}}>
         {{ item.name | uppercase }}
       </a>
     </li>
   </ul>
 </nav>
+
