@@ -1,0 +1,10 @@
+<section class="services" id="services">
+  <ul class="list-services">
+    <li *ngFor="let service of services" class="list-services__item-service">
+      <div class="list-services__icon-service">
+        <img [src]="service.image" [alt]="service.alt" />
+      </div>
+      <span class="list-services__item-description">{{ service.description | uppercase }}</span>
+    </li>
+  </ul>
+</section>

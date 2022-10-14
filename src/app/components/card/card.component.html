@@ -1,0 +1,9 @@
+<div class="card">
+    <figure>
+      <img [src]="cards[0].url" [alt]="cards[0].alt" />
+      <figcaption [ngClass]="isActive">
+        <p class="card__project-title">{{cards[0].projectName | uppercase}}</p>
+        <p class="card__project-description">{{cards[0].projectDescription}}</p>
+      </figcaption>
+    </figure>
+</div>

@@ -1,0 +1,11 @@
+.title {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+
+    color: #DDD;    
+}
+
+.title > span {
+    font-size: 128px;
+}

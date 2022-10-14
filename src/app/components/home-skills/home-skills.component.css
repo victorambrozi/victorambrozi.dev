@@ -1,0 +1,37 @@
+.skills-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-container {
+  padding: 20px;
+
+  background: #58595E;
+  border-radius: 10px;
+  box-shadow: 16px 16px 20px -8px rgba(0, 0, 0, 0.25);
+}
+
+.skill-container__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.skill-container__content span {
+  margin-top: 16px;
+
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #DDDDDD;
+  
+}
+
+.skill-container__content-image {
+  width: 120px;
+  height: 120px;
+}
