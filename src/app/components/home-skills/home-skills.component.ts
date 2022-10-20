@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PegarIdService } from '../../pegar-id.service';
 
 @Component({
   selector: 'app-home-skills',
@@ -51,7 +50,7 @@ export class HomeSkillsComponent implements OnInit {
     },
   ];
 
-  constructor(public pegarId: PegarIdService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

@@ -1,6 +1,5 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { PegarIdService } from 'src/app/pegar-id.service';
 
 @Component({
   selector: 'app-home-title',
@@ -13,7 +12,7 @@ export class HomeTitleComponent implements OnInit {
     big: "Ambrozi"
   }
 
-  constructor(private idService: PegarIdService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
