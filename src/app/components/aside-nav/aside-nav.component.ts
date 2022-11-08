@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-aside-nav',
@@ -6,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aside-nav.component.css']
 })
 export class AsideNavComponent implements OnInit {
-  page = "Home";
+  page = "skills";
   href = window.location.href;
-  constructor() { }
+  constructor(private activateRout: ActivatedRoute) { }
+
 
   ngOnInit(): void {
+    // console.log(this.message)
   }
 
 }

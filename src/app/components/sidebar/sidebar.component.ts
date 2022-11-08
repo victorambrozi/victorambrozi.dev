@@ -22,6 +22,14 @@ export class SidebarComponent implements OnInit {
       }
     },
   };
+
+  links = {
+    socialMedia: {
+      instagram: "https://www.instagram.com/victorambrozi.dev/?next=%2F",
+      linkedin: "https://www.linkedin.com/in/victorambrozi/",
+      github: "https://github.com/victorambrozi",
+    }
+  }
   constructor() {}
 
   ngOnInit(): void {}

@@ -1,32 +1,25 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { SaveOnLocalStorageService } from 'src/app/save-on-local-storage.service';
+import { HttpClient } from "@angular/common/http";
+import { Component, Input, OnInit } from "@angular/core";
+import { SaveOnLocalStorageService } from "src/app/save-on-local-storage.service";
+import { map } from "rxjs";
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  selector: "app-contact",
+  templateUrl: "./contact.component.html",
+  styleUrls: ["./contact.component.css"],
 })
 export class ContactComponent implements OnInit {
-  
-  constructor(private storage: SaveOnLocalStorageService) { }
-  contatos: object[] = [];
+  dados: any = [];
 
-  ngOnInit(): void {
-  }
+  constructor(private httpClient: HttpClient) {}
 
-  saveLocalStorage() {
-    this.storage.set("dados", JSON.stringify(this.contatos));
-  }
+  ngOnInit(): void {}
 
   onSubmit(form: any) {
     const { value } = form;
-    
-    this.contatos.push(value);
-    this.saveLocalStorage();
+
+    console.log(value);
+    this.httpClient.post("endereco/formValue", JSON.stringify(value))
+      .subscribe(dados => console.log(dados))
   }
-
-
-  
-
-
 }

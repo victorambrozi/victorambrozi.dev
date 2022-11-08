@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http'
 
 // COMPONENTES
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -33,7 +34,7 @@ import { ContactComponent } from './components/contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    SwiperModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

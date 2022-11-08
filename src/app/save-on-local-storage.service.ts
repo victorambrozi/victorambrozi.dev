@@ -11,16 +11,16 @@ export class SaveOnLocalStorageService {
 
   set(key: string, value: string): boolean {
     if (this.storage) {
-      this.storage.setItem(key, value);
+      this.storage.setItem(key, JSON.stringify(value));
       return true;
     }
 
     return false;
   }
 
-  get(key: string) {
+  get(key: string ) {
     if(this.storage){
-      return this.storage.getItem(JSON.parse(key))
+      return this.storage.getItem(key);
     }
     return null;
   }
