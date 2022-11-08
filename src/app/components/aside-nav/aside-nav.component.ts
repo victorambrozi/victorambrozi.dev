@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { EmitterRouteService } from 'src/app/emitter-route.service';
 
 @Component({
   selector: 'app-aside-nav',
@@ -7,13 +7,14 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./aside-nav.component.css']
 })
 export class AsideNavComponent implements OnInit {
-  page = "skills";
-  href = window.location.href;
-  constructor(private activateRout: ActivatedRoute) { }
+  page = "";
+  constructor(private routeEmitter: EmitterRouteService) { }
 
 
   ngOnInit(): void {
-    // console.log(this.message)
+    this.routeEmitter.router.subscribe(
+      route => this.page = route
+    )
   }
 
 }

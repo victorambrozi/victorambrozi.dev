@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmitterRouteService } from 'src/app/emitter-route.service';
 
 @Component({
   selector: 'app-home-skills',
@@ -6,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-skills.component.css']
 })
 export class HomeSkillsComponent implements OnInit {
-  id = "skills";
   skills = [
     {
       url: "../../assets/skills/angular1.svg",
@@ -50,9 +50,10 @@ export class HomeSkillsComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(private routerEmitter: EmitterRouteService) { }
 
   ngOnInit(): void {
+    this.routerEmitter.router.emit("skills")
   }
 
 }

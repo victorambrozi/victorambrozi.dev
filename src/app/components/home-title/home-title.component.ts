@@ -1,5 +1,6 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { EmitterRouteService } from 'src/app/emitter-route.service';
 
 @Component({
   selector: 'app-home-title',
@@ -12,9 +13,11 @@ export class HomeTitleComponent implements OnInit {
     big: "Ambrozi"
   }
 
-  constructor() { }
+
+  constructor(private routeEmiter: EmitterRouteService) { }
 
   ngOnInit(): void {
+    this.routeEmiter.router.emit('home');
   }
 
 }

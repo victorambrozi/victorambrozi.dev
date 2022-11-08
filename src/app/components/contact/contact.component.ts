@@ -1,7 +1,6 @@
 import { HttpClient } from "@angular/common/http";
-import { Component, Input, OnInit } from "@angular/core";
-import { SaveOnLocalStorageService } from "src/app/save-on-local-storage.service";
-import { map } from "rxjs";
+import { Component, OnInit } from "@angular/core";
+import { EmitterRouteService } from "src/app/emitter-route.service";
 
 @Component({
   selector: "app-contact",
@@ -11,9 +10,12 @@ import { map } from "rxjs";
 export class ContactComponent implements OnInit {
   dados: any = [];
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient, private routeEmitter: EmitterRouteService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.routeEmitter.router.emit("contato")
+
+  }
 
   onSubmit(form: any) {
     const { value } = form;

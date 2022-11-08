@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmitterRouteService } from 'src/app/emitter-route.service';
 
 @Component({
   selector: 'app-about',
@@ -14,9 +15,10 @@ export class AboutComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(private routeEmitter: EmitterRouteService) { }
 
   ngOnInit(): void {
+    this.routeEmitter.router.emit("sobre")
   }
 
 }

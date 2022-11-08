@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmitterRouteService } from 'src/app/emitter-route.service';
 
 @Component({
   selector: 'app-home-services',
@@ -36,9 +37,10 @@ export class HomeServicesComponent implements OnInit {
       alt: "Design responsivo"
     },
   ]
-  constructor() { }
+  constructor(private routeEmitter: EmitterRouteService) { }
 
   ngOnInit(): void {
+    this.routeEmitter.router.emit("serviços")
   }
 
 }
