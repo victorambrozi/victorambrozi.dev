@@ -1,8 +1,8 @@
 <nav class="navigation-container">
-  <div class="hamburguer-container">
+  <div class="hamburguer-container" (click)="onClick()">
     <span class="hamburguer"></span>
   </div>
-  <ul class="navigation">
+  <ul class="navigation" [class.active]="isActive">
     <li *ngFor="let item of header.items">
       <a routerLink="{{ item.path }}">
         {{ item.name | uppercase }}

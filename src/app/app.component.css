@@ -7,7 +7,7 @@
     "aside main  aside-nav"
     ;
 
-    grid-template-columns: 199px auto auto;
+    grid-template-columns: 199px auto 10%;
 
     background: radial-gradient(50% 50% at 50% 50%, #58595E 0%, #1D1E23 100%);
 }

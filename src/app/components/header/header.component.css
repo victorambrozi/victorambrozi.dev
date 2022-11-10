@@ -94,6 +94,13 @@
 
         background: rgba(29, 30, 35, 0.9);
         z-index: 1;
+
+        display: none;
+    }
+    
+    .navigation.active {
+        display: flex;
+        transition: all ease-in-out 300ms;
     }
 
     .navigation li + li {

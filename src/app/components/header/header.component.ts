@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  isActive: boolean = false;
   header = {
     items: [
       {
@@ -34,6 +34,10 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick(){
+    this.isActive = !this.isActive;
   }
 
 }
