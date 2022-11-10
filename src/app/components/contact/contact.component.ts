@@ -20,8 +20,7 @@ export class ContactComponent implements OnInit {
   onSubmit(form: any) {
     const { value } = form;
 
-    console.log(value);
-    this.httpClient.post("endereco/formValue", JSON.stringify(value))
+    this.httpClient.post("localhost:3306/cadastros", JSON.stringify(value))
       .subscribe(dados => console.log(dados))
   }
 }

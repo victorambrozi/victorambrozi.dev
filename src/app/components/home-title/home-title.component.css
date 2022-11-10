@@ -9,3 +9,9 @@
 .title > span {
     font-size: 128px;
 }
+
+@media(max-width: 1080px) {
+    .title > span {
+        font-size: 90px;
+    }
+}
