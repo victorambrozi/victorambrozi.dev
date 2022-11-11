@@ -1,6 +1,6 @@
 .list-services {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
 
@@ -27,9 +27,14 @@
   color: #DDDDDD;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 855px) {
+  .list-services__item-description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 750px) {
   .list-services {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
