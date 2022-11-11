@@ -35,3 +35,9 @@
 .social-media > a + a {
     margin-top: 8px;
 }
+
+@media (max-width: 840px) {
+    .sidebar {
+        padding: 32px;
+    }
+}
