@@ -15,3 +15,12 @@
         font-size: 90px;
     }
 }
+
+@media(max-width: 765px) {
+    .title {
+        font-size: 10px;
+    }
+    .title > span {
+        font-size: 70px;
+    }
+}
