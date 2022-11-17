@@ -5,21 +5,29 @@
     <div class="contact__form-primary">
       <label for="name" class="contact__form-label"
         >Nome
-        <input name="name" id="name" type="text" ngModel required/>
+        <input name="name" id="name" type="text" ngModel #name required />
       </label>
       <label for="email" class="contact__form-label"
         >Email
-        <input name="email" id="email" type="text" ngModel required/>
+        <input name="email" id="email" type="text" ngModel #email required />
       </label>
     </div>
     <div class="contact__form-secondary">
       <label for="textarea form-contact__message" class="contact__form-label">
-        <span>Mensagem</span> 
-        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Escreva aqui..." ngModel required></textarea>
+        <span>Mensagem</span>
+        <textarea
+          name="textarea"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Escreva aqui..."
+          ngModel
+          #message
+          required
+        ></textarea>
       </label>
 
       <button type="submit">Enviar</button>
     </div>
   </form>
 </section>
-              

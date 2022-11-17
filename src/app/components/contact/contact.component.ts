@@ -1,6 +1,7 @@
 import { HttpClient } from "@angular/common/http";
-import { Component, OnInit } from "@angular/core";
-import { EmitterRouteService } from "src/app/emitter-route.service";
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import { EmitterRouteService } from "src/app/services/emitter-route.service";
+import { SaveOnLocalStorageService } from "src/app/services/save-on-local-storage.service";
 
 @Component({
   selector: "app-contact",
@@ -10,17 +11,32 @@ import { EmitterRouteService } from "src/app/emitter-route.service";
 export class ContactComponent implements OnInit {
   dados: any = [];
 
-  constructor(private httpClient: HttpClient, private routeEmitter: EmitterRouteService) {}
+  @ViewChild('name') nameInput!: ElementRef;
+  @ViewChild('email') emailInput!: ElementRef;
+  @ViewChild('message') messageInput!: ElementRef;
+
+  constructor(
+    private httpClient: HttpClient,
+    private routeEmitter: EmitterRouteService,
+    private storage: SaveOnLocalStorageService
+  ) {}
 
   ngOnInit(): void {
-    this.routeEmitter.router.emit("contato")
-
+    this.routeEmitter.router.emit("contato");
   }
 
   onSubmit(form: any) {
     const { value } = form;
 
-    this.httpClient.post("localhost:3306/cadastros", JSON.stringify(value))
-      .subscribe(dados => console.log(dados))
+    this.nameInput.nativeElement.value = "";
+    this.emailInput.nativeElement.value = "";
+    this.messageInput.nativeElement.value = "";
+    
+    this.dados.push(value);
+    this.storage.set("contato", this.dados);
+
+    // this.httpClient
+    //   .post("localhost:3306/cadastros", JSON.stringify(value))
+    //   .subscribe((dados) => console.log(dados));
   }
 }

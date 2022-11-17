@@ -1,5 +1,4 @@
 import { Component, Directive, OnInit, ViewChild } from "@angular/core";
-import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   selector: "app-main",

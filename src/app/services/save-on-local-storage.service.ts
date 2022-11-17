@@ -9,7 +9,7 @@ export class SaveOnLocalStorageService {
     this.storage = window.localStorage;
   }
 
-  set(key: string, value: string): boolean {
+  set(key: any, value: any): boolean {
     if (this.storage) {
       this.storage.setItem(key, JSON.stringify(value));
       return true;

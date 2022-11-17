@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EmitterRouteService } from 'src/app/emitter-route.service';
+import { EmitterRouteService } from 'src/app/services/emitter-route.service';
 
 @Component({
   selector: 'app-home-services',
