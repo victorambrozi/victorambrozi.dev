@@ -1,3 +1,17 @@
+.navigation-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    max-width: 100%;
+
+    width: 70px;
+    height: 70px;
+}
 .navigation {
     display: flex;
 }

@@ -22,7 +22,6 @@ export class SidebarComponent implements OnInit {
       }
     },
   };
-
   links = {
     socialMedia: {
       instagram: "https://www.instagram.com/victorambrozi.dev/?next=%2F",

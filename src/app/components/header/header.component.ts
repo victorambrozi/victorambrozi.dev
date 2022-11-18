@@ -29,7 +29,12 @@ export class HeaderComponent implements OnInit {
         name: "Contato",
         path: "/contact"
       },
-    ]
+    ],
+    assets: {
+      logo: {
+        path: "../../assets/sidebar/logo.svg",
+      }
+    }
   }
   constructor() { }
 
