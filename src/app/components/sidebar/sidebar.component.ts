@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-sidebar",
@@ -6,6 +6,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./sidebar.component.css"],
 })
 export class SidebarComponent implements OnInit {
+
+  @Input('class-section') classSection!: string;
+
   assets = {
     logo: {
       path: "../../assets/sidebar/logo.svg",
@@ -29,7 +32,8 @@ export class SidebarComponent implements OnInit {
       github: "https://github.com/victorambrozi",
     }
   }
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit(): void {}
 }
