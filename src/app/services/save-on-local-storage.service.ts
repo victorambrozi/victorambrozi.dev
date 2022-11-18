@@ -11,7 +11,7 @@ export class SaveOnLocalStorageService {
 
   set(key: any, value: any): boolean {
     if (this.storage) {
-      this.storage.setItem(key, JSON.stringify(value));
+      this.storage.setItem(key, value);
       return true;
     }
 

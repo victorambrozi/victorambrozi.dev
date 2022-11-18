@@ -1,3 +1,4 @@
+import { JsonPipe } from "@angular/common";
 import { HttpClient } from "@angular/common/http";
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { EmitterRouteService } from "src/app/services/emitter-route.service";
@@ -27,13 +28,13 @@ export class ContactComponent implements OnInit {
 
   onSubmit(form: any) {
     const { value } = form;
+    const contato: any  = this.storage.get("contato") || [];
 
     this.nameInput.nativeElement.value = "";
     this.emailInput.nativeElement.value = "";
     this.messageInput.nativeElement.value = "";
-    
-    this.dados.push(value);
-    this.storage.set("contato", this.dados);
+
+    this.storage.set("contato",JSON.stringify([...JSON.parse(contato), value]));
 
     // this.httpClient
     //   .post("localhost:3306/cadastros", JSON.stringify(value))
