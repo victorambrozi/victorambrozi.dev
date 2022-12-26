@@ -7,10 +7,10 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http'
 
 // COMPONENTES
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SidebarComponent } from './components/sidebar-left/sidebar-left.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
-import { AsideNavComponent } from './components/aside-nav/aside-nav.component';
+import { AsideNavComponent } from './components/sidebar-right/sidebar-right.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeTitleComponent } from './components/home-title/home-title.component';
 import { HomeSkillsComponent } from './components/home-skills/home-skills.component';

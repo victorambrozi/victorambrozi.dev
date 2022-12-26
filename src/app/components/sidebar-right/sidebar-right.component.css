@@ -1,8 +1,8 @@
-.aside-nav {
-    padding-bottom: 64px;
-}
+/* .sidebar-right {
+} */
 
-.aside-nav p {
+.sidebar-right-title{
+    padding-bottom: 64px;
     writing-mode: vertical-rl;
 
     font-weight: 500;
@@ -16,7 +16,7 @@
     transition: all .3s ease-in-out;
 }
 
-.aside-nav p::before{
+.sidebar-right-title::before{
     content: "";
     display: block;
 
@@ -27,7 +27,7 @@
     background-color: #DDD;
 }
 
-.aside-nav p::after{
+.sidebar-right-title::after{
     content: "";
     display: block;
 
