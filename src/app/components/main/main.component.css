@@ -4,5 +4,7 @@
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+
+    border: 2px solid red;;
 }

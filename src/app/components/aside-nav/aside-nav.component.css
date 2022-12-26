@@ -1,8 +1,8 @@
-.aside-nav {
+.grid-area-sidebar-right {
     padding-bottom: 64px;
 }
 
-.aside-nav p {
+.grid-area-sidebar-right p {
     writing-mode: vertical-rl;
 
     font-weight: 500;
@@ -16,7 +16,7 @@
     transition: all .3s ease-in-out;
 }
 
-.aside-nav p::before{
+.grid-area-sidebar-right p::before{
     content: "";
     display: block;
 
@@ -27,7 +27,7 @@
     background-color: #DDD;
 }
 
-.aside-nav p::after{
+.grid-area-sidebar-right p::after{
     content: "";
     display: block;
 
