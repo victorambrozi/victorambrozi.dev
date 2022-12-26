@@ -1,15 +1,19 @@
 <div class="container">
-  <header class="grid-area-header">
+  <header class="header">
     <app-header></app-header>
   </header>
-  
-  <main class="grid-area-main">
-    <app-sidebar class-section="grid-area-sidebar-left"></app-sidebar>
 
-    <app-main></app-main>
-    
-    <aside class="grid-area-sidebar-right-container">
-      <app-aside-nav class-section="grid-area-sidebar-right"></app-aside-nav>
+  <main class="main">
+    <aside class="sidebar-left-container">
+      <app-sidebar-left ></app-sidebar-left>
+    </aside>
+
+    <div class="main-component">
+      <app-main></app-main>
+    </div>
+
+    <aside class="sidebar-right-container">
+      <app-sidebar-right></app-sidebar-right>
     </aside>
   </main>
 </div>

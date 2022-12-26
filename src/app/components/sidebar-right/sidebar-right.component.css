@@ -1,8 +1,8 @@
-.grid-area-sidebar-right {
-    padding-bottom: 64px;
-}
+/* .sidebar-right {
+} */
 
-.grid-area-sidebar-right p {
+.sidebar-right-title{
+    padding-bottom: 64px;
     writing-mode: vertical-rl;
 
     font-weight: 500;
@@ -16,7 +16,7 @@
     transition: all .3s ease-in-out;
 }
 
-.grid-area-sidebar-right p::before{
+.sidebar-right-title::before{
     content: "";
     display: block;
 
@@ -27,7 +27,7 @@
     background-color: #DDD;
 }
 
-.grid-area-sidebar-right p::after{
+.sidebar-right-title::after{
     content: "";
     display: block;
 

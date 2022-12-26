@@ -1,13 +1,11 @@
 import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-sidebar",
-  templateUrl: "./sidebar.component.html",
-  styleUrls: ["./sidebar.component.css"],
+  selector: "app-sidebar-left",
+  templateUrl: "./sidebar-left.component.html",
+  styleUrls: ["./sidebar-left.component.css"],
 })
 export class SidebarComponent implements OnInit {
-
-  @Input('class-section') classSection!: string;
 
   assets = {
     logo: {
